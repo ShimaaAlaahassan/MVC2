@@ -1,0 +1,38 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+<h1>Edit Dependent</h1>
+
+<form action="/Dependent/EditempoloyeeDb">
+    <input id="id" name="id" value="@Model.id" hidden />
+    
+    <input id="id" name="id" type="text" value="@Model.id" style="visibility:hidden" />
+    <label>Name</label>
+    <input id="Name" name="Name" type="text" value="@Model.Name" />
+    <label>Sex </label>
+    <input id="Sex" name="Sex" type="text" value="@Model.Sex " />
+
+    <label>BirthDate  </label>
+    <input id="BirthDate " name="BirthDate " type="text" value="@Model.BirthDate  " />
+
+    <label>Relationship</label>
+    <input id="Relationship" name=" Relationship" type="text" value="@Model.Relationship" />
+
+    @*<label>SuperVisor</label>*@
+@*    <select id="employee" name="SuperVisor">
+        @foreach (var ins in ViewBag.ins)
+        {
+            @if (ins.Id == Model.employee)
+            {
+                <option value="@ins.Id" selected>@ins.FirstName</option>
+            }else{
+                <option value="@ins.Id">@ins.Sex</option>
+            }
+        }
+    </select>*@
+
+    <input type="submit" value="Edit" />
+</form>

@@ -1,0 +1,28 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    
+}
+
+<style>
+    p{
+        border: 2px blake solid
+    }
+</style>
+<!--Weak view-->
+<!--Model data type dynamic-->
+
+<!--Stong View-->
+@model employee
+
+<h1>employee Data: </h1>
+
+<p>FirstName : @Model.FirstName</p>
+<p>MiddleName: @Model.MiddleName</p>
+<p>LastName: @Model.LastName</p>
+<p>Salary: @Model.Salary</p>
+
+
+
+<a href="/employee" >Go To All employee</a>
